@@ -10,7 +10,7 @@ const EventoMeiggs = () => (
       <div className="max-w-4xl mx-auto bg-white rounded-md shadow p-6">
         <h1 className="text-3xl font-bold text-blue-800 mb-4">Navidad Segura en Barrio Meiggs</h1>
         <img
-          src="/images/navidad_segura_barrio_meiggs.jpg"
+          src="/images/meiggs.jpg"
           alt="Navidad en Meiggs"
           className="w-full h-auto rounded mb-4"
         />

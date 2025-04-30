@@ -10,7 +10,7 @@ const EventoRonaldinho = () => (
       <div className="max-w-4xl mx-auto bg-white rounded-md shadow p-6">
         <h1 className="text-3xl font-bold text-blue-800 mb-4">Show de Ronaldinho en Chile</h1>
         <img
-          src="/images/Seguridad ronaldinho.jpg"
+          src="/images/ronaldinho.jpg"
           alt="Ronaldinho en Chile"
           className="w-full h-auto rounded mb-4"
         />

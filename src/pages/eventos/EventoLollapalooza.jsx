@@ -23,12 +23,7 @@ const EventoLollapalooza = () => (
           coordinación y supervisión de accesos controlados, asegurando la tranquilidad de los asistentes en zonas de alto tráfico.
           Más información sobre Aldo <Link to="/aldo" className="text-blue-700 underline">aquí</Link>.
         </p>
-        <Link
-          to="/aldo"
-          className="inline-block mt-4 text-white bg-blue-700 hover:bg-blue-800 font-semibold py-2 px-4 rounded"
-        >
-          ← Volver al perfil de Aldo
-        </Link>
+
       </div>
     </div>
     <EventoFooter />

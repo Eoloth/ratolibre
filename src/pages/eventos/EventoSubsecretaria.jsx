@@ -23,12 +23,6 @@ const EventoSubsecretaria = () => (
           brindando apoyo a las comitivas oficiales y regulando accesos vehiculares durante el despliegue de las actividades. Puedes revisar su participación
           <Link to="/aldo" className="text-blue-700 underline"> aquí</Link>.
         </p>
-        <Link
-          to="/aldo"
-          className="inline-block mt-4 text-white bg-blue-700 hover:bg-blue-800 font-semibold py-2 px-4 rounded"
-        >
-          ← Volver al perfil de Aldo
-        </Link>
       </div>
     </div>
     <EventoFooter />
