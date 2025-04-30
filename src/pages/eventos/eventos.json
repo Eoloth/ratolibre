@@ -1,0 +1,19 @@
+[
+    {
+      "titulo": "Lollapalooza 2025",
+      "categoria": "musical",
+      "imagen": "/images/lollapalooza.jpg",
+      "fuente": "EMOL",
+      "url": "https://www.emol.com/noticias/Espectaculos/2025/03/10/1111111/lollapalooza-2025.html",
+      "slug": "lollapalooza-2025"
+    },
+    {
+      "titulo": "Maratón de Santiago 2025",
+      "categoria": "deportivo",
+      "imagen": "/images/maraton.jpg",
+      "fuente": "EMOL",
+      "url": "https://www.emol.com/noticias/Deportes/2025/04/02/2222222/maraton-santiago.html",
+      "slug": "maraton-santiago-2025"
+    }
+  ]
+  
