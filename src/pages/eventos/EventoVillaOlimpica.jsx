@@ -19,12 +19,7 @@ const EventoVillaOlimpica = () => {
       alt="Villa Olímpica"
       parrafos={parrafos}
     >
-      <p className="text-gray-700 dark:text-gray-200">
-        Puedes ver el perfil completo de{' '}
-        <Link to="/personas/aldo-olivero-soto" className="text-blue-700 underline dark:text-blue-400">
-          Aldo Olivero Soto
-        </Link>.
-      </p>
+
       <EventoFooter />
     </EventoBase>
   );
