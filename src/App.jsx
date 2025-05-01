@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import IndexPage from './pages/IndexPage.jsx';
 
 // Colaboradores
-import AldoTiempoLibre from './pages/AldoTiempoLibre.jsx';
+import AldoOliveroSoto from './pages/AldoOliveroSoto.jsx';
 
 // Eventos
 import EventoRonaldinho from './pages/eventos/EventoRonaldinho.jsx';
@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<IndexPage />} />
 
         {/* Colaboradores */}
-        <Route path="/aldo" element={<AldoTiempoLibre />} />
+        <Route path="/personas/aldo-olivero-soto" element={<AldoOliveroSoto />} />
 
         {/* Eventos */}
         <Route path="/evento/ronaldinho" element={<EventoRonaldinho />} />
