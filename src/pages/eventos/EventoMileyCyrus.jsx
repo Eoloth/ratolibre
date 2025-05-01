@@ -18,7 +18,7 @@ const EventoMileyCyrus = () => {
   return (
     <EventoBase
       titulo="Operativo en Villa Olímpica"
-      imagen="/images/villa_olimpica.jpg"
+      imagen="/images/miley_cyrus.jpg"
       alt="Villa Olímpica"
       parrafos={parrafos}
     >
