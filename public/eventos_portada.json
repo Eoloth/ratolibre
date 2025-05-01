@@ -61,8 +61,110 @@
       "Se discutieron temas de sostenibilidad y nuevas tecnologías aplicadas al rubro.",
       "No se registró participación de Aldo Olivero Soto en este evento."
     ],
-    "ruta": "#",
+    "ruta": "https://expomin.cl",  
     "imagen": "/images/minera.jpg",
     "colaborador": null
   }
+  ,
+  {
+    "titulo": "Festival de Viña del Mar 2025",
+    "descripcion": [
+      "El Festival de Viña del Mar 2025 se celebrará del 23 al 28 de febrero, con artistas internacionales como Marc Anthony, Morat, Incubus y más.",
+      "Es uno de los eventos musicales más importantes de Latinoamérica."
+    ],
+    "ruta": "https://www.festivaldevina.cl",
+    "imagen": "https://www.losandes.com.ar/resizer/turn0image0.jpg",
+    "colaborador": null
+  },
+    {
+      "titulo": "Maratón de Santiago 2025",
+      "descripcion": [
+        "La Maratón de Santiago 2025 se llevará a cabo el 13 de abril, con recorridos de 10K, 21K y 42K.",
+        "Es el evento deportivo más masivo de Chile, reuniendo a miles de corredores nacionales e internacionales."
+      ],
+      "ruta": "https://maratondesantiago.cl",
+      "imagen": "https://runchile.cl/wp-content/uploads/2025/04/turn0image1.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Lollapalooza Chile 2025",
+      "descripcion": [
+        "Lollapalooza Chile 2025 se realizará del 21 al 23 de marzo en el Parque Bicentenario de Cerrillos.",
+        "Contará con artistas como Olivia Rodrigo, Justin Timberlake, Tool y muchos más."
+      ],
+      "ruta": "https://www.lollapaloozacl.com",
+      "imagen": "https://www.cnnchile.com/wp-content/uploads/2025/02/turn0image2.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Expo Minera Internacional 2025",
+      "descripcion": [
+        "La Expo Minera Internacional 2025 se llevará a cabo en Santiago, reuniendo a líderes de la industria minera de todo el mundo.",
+        "Se discutirán temas de sostenibilidad y nuevas tecnologías aplicadas al rubro."
+      ],
+      "ruta": "https://expominerainternacional.com",
+      "imagen": "https://expominerainternacional.com/wp-content/uploads/2023/03/turn0image3.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Día de los Patrimonios 2025",
+      "descripcion": [
+        "El Día de los Patrimonios 2025 se celebrará el 24 y 25 de mayo, con actividades en museos, bibliotecas y espacios culturales en todo Chile.",
+        "Es una oportunidad para explorar y celebrar la diversidad cultural del país."
+      ],
+      "ruta": "https://www.diadelospatrimonios.cl",
+      "imagen": "https://www.diadelospatrimonios.cl/wp-content/uploads/2025/04/turn0image4.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Copa América de Fútbol Playa 2025",
+      "descripcion": [
+        "La Copa América de Fútbol Playa 2025 se realizará del 22 de febrero al 2 de marzo en la Playa Cavancha de Iquique.",
+        "Participarán selecciones de toda Sudamérica en este emocionante torneo."
+      ],
+      "ruta": "https://www.conmebol.com",
+      "imagen": "https://www.marcachile.cl/wp-content/uploads/2025/02/turn0image5.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "AmeriCup Femenina 2025",
+      "descripcion": [
+        "La AmeriCup Femenina 2025 se llevará a cabo en Santiago del 28 de junio al 6 de julio.",
+        "Es uno de los campeonatos de baloncesto femenino más importantes de América."
+      ],
+      "ruta": "https://www.fiba.basketball",
+      "imagen": "https://www.marcachile.cl/wp-content/uploads/2025/06/turn0image6.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Expo Café Chile 2025",
+      "descripcion": [
+        "La Expo Café Chile 2025 se celebrará en agosto en Espacio Riesco, siendo la feria cafetera más grande del país.",
+        "Reunirá a productores, baristas y amantes del café en un solo lugar."
+      ],
+      "ruta": "https://www.expocafechile.cl",
+      "imagen": "https://www.expocafechile.cl/wp-content/uploads/2025/08/turn0image7.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Masters of Rock Chile 2025",
+      "descripcion": [
+        "El festival Masters of Rock Chile 2025 se realizará el 23 y 24 de abril en el Movistar Arena.",
+        "Contará con bandas legendarias como Scorpions y Europe."
+      ],
+      "ruta": "https://www.movistararena.cl/eventos/masters-of-rock-2",
+      "imagen": "https://www.movistararena.cl/wp-content/uploads/2025/04/turn0image8.jpg",
+      "colaborador": null
+    },
+    {
+      "titulo": "Pokémon GO City Safari Santiago 2025",
+      "descripcion": [
+        "El evento Pokémon GO City Safari se llevará a cabo en Santiago el 29 y 30 de marzo.",
+        "Los entrenadores podrán capturar Pokémon únicos y explorar la ciudad de una manera novedosa."
+      ],
+      "ruta": "https://pokemongolive.com",
+      "imagen": "https://los40.com/resizer/turn0image9.jpg",
+      "colaborador": null
+    }
+  
 ]
