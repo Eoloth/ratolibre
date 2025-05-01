@@ -9,7 +9,12 @@ const EventoVillaOlimpica = () => {
     <>
       <strong>Aldo Olivero Soto</strong> trabajó junto a un equipo de seguridad para monitorear el flujo de asistentes,
       prevenir incidentes y garantizar un entorno seguro durante toda la jornada.
-    </>
+    </>,
+    'El evento incluyó actividades recreativas, talleres y presentaciones artísticas, promoviendo la participación ciudadana y el fortalecimiento de la comunidad.',
+    'La colaboración entre las juntas vecinales y las autoridades fue clave para el éxito del operativo, permitiendo que los vecinos disfrutaran de un día lleno de actividades sin contratiempos.',
+    'La seguridad y el bienestar de los asistentes fueron prioridad, y el equipo de seguridad estuvo preparado para responder a cualquier eventualidad.',
+    'La Villa Olímpica se ha convertido en un espacio emblemático para la comunidad, y eventos como este son una oportunidad para fomentar la cohesión social y el sentido de pertenencia entre los vecinos.',
+    'La participación activa de los ciudadanos en la seguridad de sus comunidades es esencial para lograr un cambio positivo y duradero.',
   ];
 
   return (

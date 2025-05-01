@@ -10,7 +10,9 @@ const EventoDimeiggs = () => {
     <>
       <strong>Aldo Olivero Soto</strong> participó como coordinador de seguridad en un operativo especial de control y vigilancia en la zona,
       contribuyendo al orden del comercio establecido y al resguardo de los peatones.
-    </>
+    </>,
+    'El operativo incluyó la supervisión de accesos, control de multitudes y atención a emergencias, asegurando una experiencia segura para todos los presentes.',
+    'La coordinación del equipo de seguridad fue fundamental para el éxito del evento, permitiendo que las familias disfrutaran de un día de compras sin contratiempos.',
   ];
   return (
     <EventoBase

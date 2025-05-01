@@ -10,8 +10,7 @@ const EventoMeiggs = () => {
     <>
     <strong>Aldo Olivero Soto</strong> formó parte del dispositivo de seguridad, colaborando en patrullajes preventivos
           y control de accesos peatonales durante los operativos municipales de la temporada navideña. 
-          Puedes ver el perfil completo de <Link to="/personas/aldo-olivero-soto" className="text-blue-700 underline">Aldo Olivero Soto</Link>.
-    </>
+          </>
   ];
   return (
     <EventoBase

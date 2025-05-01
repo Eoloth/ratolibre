@@ -10,7 +10,7 @@ const EventoMileyCyrus = () => {
     <>
       <strong>Aldo Olivero Soto</strong> fue uno de los responsables en terreno para supervisar el acceso seguro del público
             y resguardar las zonas de backstage durante la presentación.{" "}
-            Puedes ver el perfil completo de <Link to="/personas/aldo-olivero-soto" className="text-blue-700 underline">Aldo Olivero Soto</Link>.
+            
     </>
   ];
 

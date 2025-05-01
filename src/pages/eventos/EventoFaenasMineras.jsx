@@ -8,7 +8,9 @@ const EventoFaenasMineras = () => {
     'Las faenas mineras en el norte del país implican estrictos protocolos de seguridad, tanto operativos como logísticos. El acceso a las instalaciones está regulado y se requiere personal altamente calificado.',
     <>
       <strong>Aldo Olivero Soto</strong> fue parte del equipo de supervisión en faenas seleccionadas, velando por la seguridad en zonas de carga y tránsito de vehículos pesados. Su experiencia fue clave para el cumplimiento de normativas.
-    </>
+    </>,
+    'El trabajo en estas faenas es fundamental para garantizar la seguridad de los trabajadores y el correcto funcionamiento de las operaciones mineras.',
+    'La coordinación del equipo de seguridad fue esencial para el éxito de las operaciones, permitiendo que las actividades se desarrollaran sin contratiempos.',
   ];
 
 
