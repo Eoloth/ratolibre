@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const IndexPage = () => {
   const [eventos, setEventos] = useState([]);
   const [paginaActual, setPaginaActual] = useState(1);
+  const [modoOscuro, setModoOscuro] = useState(false);
   const eventosPorPagina = 6;
 
   useEffect(() => {
@@ -13,15 +15,28 @@ const IndexPage = () => {
       .catch(err => console.error("Error cargando eventos:", err));
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    if (modoOscuro) {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+  }, [modoOscuro]);
+
   const inicio = (paginaActual - 1) * eventosPorPagina;
   const eventosPagina = eventos.slice(inicio, inicio + eventosPorPagina);
   const totalPaginas = Math.ceil(eventos.length / eventosPorPagina);
 
   return (
-    <div className="min-h-screen bg-gray-50 px-6 py-10">
+    <div className="min-h-screen px-6 py-10 bg-gradient-to-b from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+
+      <Navbar modoOscuro={modoOscuro} setModoOscuro={setModoOscuro} />
+
+      {/* Contenido */}
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-blue-800 mb-6">Eventos y Panoramas en Chile</h1>
-        <p className="text-gray-600 mb-10">
+        <h2 className="text-4xl font-bold text-blue-800 dark:text-blue-300 mb-6">Eventos y Panoramas en Chile</h2>
+        <p className="text-gray-600 dark:text-gray-300 mb-10">
           Explora los eventos destacados a nivel nacional con colaboradores clave en terreno.
         </p>
 
@@ -29,16 +44,17 @@ const IndexPage = () => {
           {eventosPagina.map((e, idx) => {
             const esExterno = !e.colaborador && e.ruta && e.ruta.startsWith('http');
 
-            const Contenedor = ({ children }) => esExterno ? (
-              <a href={e.ruta} target="_blank" rel="noopener noreferrer"
-                 className="block bg-white rounded-md shadow p-6 border border-gray-200 hover:shadow-lg transition">
-                {children}
-              </a>
-            ) : (
-              <div className="bg-white rounded-md shadow p-6 border border-gray-200">
-                {children}
-              </div>
-            );
+            const Contenedor = ({ children }) =>
+              esExterno ? (
+                <a href={e.ruta} target="_blank" rel="noopener noreferrer"
+                   className="block bg-white dark:bg-gray-800 rounded-md shadow p-6 border border-gray-200 dark:border-gray-600 hover:shadow-lg transition">
+                  {children}
+                </a>
+              ) : (
+                <div className="bg-white dark:bg-gray-800 rounded-md shadow p-6 border border-gray-200 dark:border-gray-600">
+                  {children}
+                </div>
+              );
 
             return (
               <Contenedor key={idx}>
@@ -49,10 +65,9 @@ const IndexPage = () => {
                     className="w-full h-48 object-cover rounded mb-4"
                   />
                 )}
-                <h2 className="text-2xl font-semibold text-blue-700 mb-2">{e.titulo}</h2>
-
+                <h2 className="text-2xl font-semibold text-blue-700 dark:text-blue-400 mb-2">{e.titulo}</h2>
                 {e.descripcion.map((p, i) => (
-                  <p key={i} className="text-gray-700 mb-3">
+                  <p key={i} className="text-gray-700 dark:text-gray-300 mb-3">
                     {e.colaborador && p.includes(e.colaborador) ? (
                       <Link to={e.ruta} className="text-blue-600 font-medium hover:underline">{p}</Link>
                     ) : (
@@ -61,11 +76,11 @@ const IndexPage = () => {
                   </p>
                 ))}
                 {e.colaborador && (
-                  <div className="mt-4 flex items-center gap-4 border-t pt-4">
+                  <div className="mt-4 flex items-center gap-4 border-t pt-4 border-gray-200 dark:border-gray-600">
                     <img src={e.imagen} alt={e.colaborador} className="w-16 h-16 rounded-full object-cover border" />
                     <div>
-                      <p className="font-semibold text-gray-800">{e.colaborador}</p>
-                      <p className="text-sm text-gray-600">Colaborador en seguridad</p>
+                      <p className="font-semibold text-gray-800 dark:text-gray-100">{e.colaborador}</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Colaborador en seguridad</p>
                     </div>
                   </div>
                 )}
@@ -83,7 +98,7 @@ const IndexPage = () => {
               className={`px-3 py-1 rounded ${
                 paginaActual === i + 1
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-blue-600 border border-blue-600'
+                  : 'bg-white dark:bg-gray-700 text-blue-600 border border-blue-600'
               }`}
             >
               {i + 1}
