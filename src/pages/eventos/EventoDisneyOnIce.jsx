@@ -1,24 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import EventoFooter from '../../components/EventoFooter';
-import Navbar from '../../components/Navbar';
+import EventoBase from '../../components/EventoBase';
 
-const EventoDisneyOnIce = () => (
-  <>
-    <Navbar />
-    <div className="pt-20 px-6 min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto bg-white rounded-md shadow p-6">
-        <h1 className="text-3xl font-bold text-blue-800 mb-4">Disney On Ice</h1>
-        <img src="../images/disney_on_ice.jpg" alt="Disney On Ice"
-          className="w-full h-auto rounded mb-6 border"
-        />
-        <p className="text-gray-700 mb-4">
-          Aldo Olivero Soto prestó apoyo en la coordinación de seguridad del evento infantil Disney On Ice, 
-          garantizando un entorno seguro para las familias que asistieron al Movistar Arena.
-        </p>
-        <EventoFooter />
-      </div>
-    </div>
-  </>
-);
+const EventoDisneyOnIce = () => {
+  const parrafos = [
+    'El evento Disney On Ice se llevó a cabo en el Movistar Arena, donde miles de familias disfrutaron de un espectáculo mágico.',
+    <>
+      <strong>Aldo Olivero Soto</strong> fue parte del equipo de seguridad que garantizó la protección y bienestar de los asistentes durante el evento.
+    </>,
+  ];
+  return (
+    <EventoBase
+      titulo="Operativo en Villa Olímpica"
+      imagen="/images/villa_olimpica.jpg"
+      alt="Villa Olímpica"
+      parrafos={parrafos}
+    >
+      <p className="text-gray-700 dark:text-gray-200">
+        Puedes ver el perfil completo de{' '}
+        <Link to="/personas/aldo-olivero-soto" className="text-blue-700 underline dark:text-blue-400">
+          Aldo Olivero Soto
+        </Link>.
+      </p>
+      <EventoFooter />
+    </EventoBase>
+  );
+};
 export default EventoDisneyOnIce;

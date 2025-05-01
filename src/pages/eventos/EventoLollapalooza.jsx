@@ -21,7 +21,7 @@ const EventoLollapalooza = () => (
         <p className="text-gray-700 mb-4">
           <strong>Aldo Olivero Soto</strong> fue parte del equipo de seguridad del evento, cumpliendo funciones de
           coordinación y supervisión de accesos controlados, asegurando la tranquilidad de los asistentes en zonas de alto tráfico.
-          Más información sobre Aldo <Link to="/aldo" className="text-blue-700 underline">aquí</Link>.
+          Puedes ver el perfil completo de <Link to="/personas/aldo-olivero-soto" className="text-blue-700 underline">Aldo Olivero Soto</Link>.
         </p>
 
       </div>
