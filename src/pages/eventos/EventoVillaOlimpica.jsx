@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoVillaOlimpica = () => {
   const parrafos = [
@@ -25,7 +24,7 @@ const EventoVillaOlimpica = () => {
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };

@@ -12,13 +12,20 @@ const EventoBase = ({ titulo, imagen, alt, parrafos, children }) => {
           {imagen && (
             <img src={imagen} alt={alt} className="w-full h-auto rounded mb-4" />
           )}
+
           {parrafos.map((texto, idx) => (
-            <p key={idx} className="mb-4 text-gray-700 dark:text-gray-200">{texto}</p>
+            <p key={idx} className="mb-4 text-gray-700 dark:text-gray-200">
+              {texto}
+            </p>
           ))}
+
+          {/* Contenido adicional pasado como children */}
           {children}
+
+          {/* Footer fijo con link al perfil de Aldo */}
+          <EventoFooter />
         </div>
       </div>
-      <EventoFooter />
     </>
   );
 };

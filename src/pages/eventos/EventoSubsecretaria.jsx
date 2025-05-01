@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoSubsecretaria = () => {
   const parrafos = [
@@ -21,13 +20,20 @@ const EventoSubsecretaria = () => {
   ];
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Reunión de la Subsecretaría del Interior"
       imagen="/images/subsecretaria.jpg"
-      alt="Villa Olímpica"
+      alt="Evento de la Subsecretaría del Interior"
+      fecha="15 de marzo de 2023"
+      lugar="Santiago, Chile"
+      descripcion="Ceremonia oficial organizada por la Subsecretaría del Interior, donde se abordaron temas de seguridad ciudadana y cohesión comunitaria."
+      subtitulo="Evento de la Subsecretaría del Interior"
+      subtitulo2="Ceremonia oficial"
+      subtitulo3="Santiago, Chile"  
+      
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };

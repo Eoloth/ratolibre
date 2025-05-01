@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import EventoFooter from '../../components/EventoFooter';
 import EventoBase from '../../components/EventoBase';
 
 const EventoDisneyOnIce = () => {
@@ -16,13 +14,12 @@ const EventoDisneyOnIce = () => {
   ];
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Disney On Ice en Chile"
       imagen="/images/disney_on_ice.jpg"
-      alt="Villa Olímpica"
+      alt="Disney On Ice"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
     </EventoBase>
   );
 };

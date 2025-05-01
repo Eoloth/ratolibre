@@ -1,8 +1,7 @@
 // Contenido JSX simulado para Claudio Bravoimport React from 'react';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoClaudioBravo = () => {
   const parrafos = [
@@ -16,13 +15,13 @@ const EventoClaudioBravo = () => {
   
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Visita de Claudio Bravo"
       imagen="/images/claudio_bravo.jpg"
-      alt="Villa Olímpica"
+      alt="Claudio Bravo"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };

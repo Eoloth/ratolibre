@@ -1,8 +1,6 @@
 // Contenido JSX simulado para Miley Cyrus// src/pages/eventos/EventoMileyCyrus.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
 
 const EventoMileyCyrus = () => {
   const parrafos = [
@@ -11,19 +9,21 @@ const EventoMileyCyrus = () => {
       <strong>Aldo Olivero Soto</strong> fue uno de los responsables en terreno para supervisar el acceso seguro del público
             y resguardar las zonas de backstage durante la presentación.{" "}
             
-    </>
+    </>,
+    'El evento fue un éxito rotundo, con una gran asistencia y una atmósfera electrizante. La seguridad fue fundamental para garantizar la tranquilidad de todos los asistentes.',
+    'El equipo de seguridad trabajó en conjunto con las autoridades locales para asegurar que todo transcurriera sin inconvenientes.',
   ];
 
 
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Concierto de Miley Cyrus en Chile"
       imagen="/images/miley_cyrus.jpg"
-      alt="Villa Olímpica"
+      alt="Miley Cyrus en Chile"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };

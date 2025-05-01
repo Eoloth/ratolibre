@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoMeiggs = () => {
   const parrafos = [  
@@ -10,17 +9,19 @@ const EventoMeiggs = () => {
     <>
     <strong>Aldo Olivero Soto</strong> formó parte del dispositivo de seguridad, colaborando en patrullajes preventivos
           y control de accesos peatonales durante los operativos municipales de la temporada navideña. 
-          </>
+          </>,
+    'El operativo se realizó en conjunto con Carabineros de Chile y la Policía de Investigaciones (PDI), quienes realizaron controles de identidad y fiscalizaciones a locales comerciales.',
+    'El objetivo del operativo fue garantizar la seguridad de los asistentes y el correcto desarrollo de las actividades comerciales en la zona.',
   ];
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Operativo de Seguridad en Meiggs"
       imagen="/images/meiggs.jpg"
-      alt="Villa Olímpica"
+      alt="Operativo de Seguridad en Meiggs"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };

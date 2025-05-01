@@ -1,8 +1,6 @@
-// Contenido JSX simulado para Dimeiggsimport React from 'react';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoDimeiggs = () => {
   const parrafos = [
@@ -14,16 +12,17 @@ const EventoDimeiggs = () => {
     'El operativo incluyó la supervisión de accesos, control de multitudes y atención a emergencias, asegurando una experiencia segura para todos los presentes.',
     'La coordinación del equipo de seguridad fue fundamental para el éxito del evento, permitiendo que las familias disfrutaran de un día de compras sin contratiempos.',
   ];
+
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Operativo en Dimeiggs"
       imagen="/images/Dimeiggs.jpg"
-      alt="Villa Olímpica"
+      alt="Dimeiggs"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
     </EventoBase>
   );
 };
+
 export default EventoDimeiggs;

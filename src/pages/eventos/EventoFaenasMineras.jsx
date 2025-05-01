@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EventoBase from '../../components/EventoBase';
-import EventoFooter from '../../components/EventoFooter';
+
 
 const EventoFaenasMineras = () => {
   const parrafos = [
@@ -16,13 +15,13 @@ const EventoFaenasMineras = () => {
 
   return (
     <EventoBase
-      titulo="Operativo en Villa Olímpica"
+      titulo="Operativo en Faenas Mineras"
       imagen="/images/minera.jpg"
-      alt="Villa Olímpica"
+      alt="Faenas Mineras"
       parrafos={parrafos}
     >
 
-      <EventoFooter />
+
     </EventoBase>
   );
 };
