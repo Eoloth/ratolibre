@@ -42,7 +42,15 @@ const IndexPage = () => {
 
             return (
               <Contenedor key={idx}>
+                {e.imagen && (
+                  <img
+                    src={e.imagen}
+                    alt={e.titulo}
+                    className="w-full h-48 object-cover rounded mb-4"
+                  />
+                )}
                 <h2 className="text-2xl font-semibold text-blue-700 mb-2">{e.titulo}</h2>
+
                 {e.descripcion.map((p, i) => (
                   <p key={i} className="text-gray-700 mb-3">
                     {e.colaborador && p.includes(e.colaborador) ? (
