@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [modoOscuro, setModoOscuro] = useState(() => {
@@ -16,7 +17,11 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center mb-10 border-b pb-4">
-      <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-300">Ratolibre</h1>
+
+      <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-300">
+        <Link to="/" className="hover:underline">Ratolibre</Link>
+      </h1>
+
       <button
         onClick={() => setModoOscuro(!modoOscuro)}
         className="text-2xl focus:outline-none transition"
