@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';
+import Navbar from '../components/Navbar';
 
 const eventos = [
   { nombre: "Show de Ronaldinho", ruta: "/evento/ronaldinho", imagen: "/images/ronaldinho.jpg" },
@@ -17,6 +18,8 @@ const eventos = [
 ];
 
 const AldoOliveroSoto = () => {
+  Navbar();
+  
   return (
     <Layout>
       <Helmet>

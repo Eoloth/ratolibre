@@ -20,7 +20,7 @@ const EventoLollapalooza = () => {
     <EventoBase
       titulo="Operativo Lollapalooza 2022"
       imagen="/images/Lollapalooza 2022.jpg"
-      alt="Lollapalooza"
+      alt="Aldo Olivero Soto - Lollapalooza"
       parrafos={parrafos}
     >
 

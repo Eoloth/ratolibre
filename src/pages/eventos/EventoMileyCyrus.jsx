@@ -19,7 +19,7 @@ const EventoMileyCyrus = () => {
     <EventoBase
       titulo="Concierto de Miley Cyrus en Chile"
       imagen="/images/miley_cirus.jpg"
-      alt="Miley Cyrus en Chile"
+      alt="Aldo Olivero Soto - Miley Cyrus en Chile"
       parrafos={parrafos}
     >
 

@@ -17,7 +17,7 @@ const EventoClaudioBravo = () => {
     <EventoBase
       titulo="Visita de Claudio Bravo"
       imagen="/images/claudio_bravo.jpg"
-      alt="Claudio Bravo"
+      alt="Aldo Olivero Soto - Claudio Bravo"
       parrafos={parrafos}
     >
 

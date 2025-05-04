@@ -17,7 +17,7 @@ const EventoDimeiggs = () => {
     <EventoBase
       titulo="Operativo en Dimeiggs"
       imagen="/images/Dimeiggs.jpg"
-      alt="Dimeiggs"
+      alt="Aldo Olivero Soto - Dimeiggs"
       parrafos={parrafos}
     >
 

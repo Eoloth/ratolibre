@@ -22,7 +22,7 @@ const EventoSubsecretaria = () => {
     <EventoBase
       titulo="Reunión de la Subsecretaría del Interior"
       imagen="/images/subsecretaria.jpg"
-      alt="Evento de la Subsecretaría del Interior"
+      alt="Aldo Olivero Soto - Evento de la Subsecretaría del Interior"
       fecha="15 de marzo de 2023"
       lugar="Santiago, Chile"
       descripcion="Ceremonia oficial organizada por la Subsecretaría del Interior, donde se abordaron temas de seguridad ciudadana y cohesión comunitaria."

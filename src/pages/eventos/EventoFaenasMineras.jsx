@@ -17,7 +17,7 @@ const EventoFaenasMineras = () => {
     <EventoBase
       titulo="Operativo en Faenas Mineras"
       imagen="/images/minera.jpg"
-      alt="Faenas Mineras"
+      alt="Aldo Olivero Soto - Faenas Mineras"
       parrafos={parrafos}
     >
 

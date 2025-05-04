@@ -22,7 +22,7 @@ const EventoRonaldinho = () => {
     <EventoBase
       titulo="Show de Ronaldinho en Chile"
       imagen="/images/ronaldinho.jpg"
-      alt="Ronaldinho en Chile"
+      alt="Aldo Olivero Soto - Ronaldinho en Chile"
       parrafos={parrafos}
     >
 

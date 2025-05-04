@@ -16,7 +16,7 @@ const EventoDisneyOnIce = () => {
     <EventoBase
       titulo="Disney On Ice en Chile"
       imagen="/images/disney_on_ice.jpg"
-      alt="Disney On Ice"
+      alt="Aldo Olivero Soto - Disney On Ice"
       parrafos={parrafos}
     >
 
