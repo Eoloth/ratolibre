@@ -1,7 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 
-
 const EventoDimeiggs = () => {
   const parrafos = [
     'La zona comercial de Dimeiggs es una de las más concurridas de Santiago, especialmente durante fechas especiales como Navidad y el regreso a clases.',
@@ -19,9 +18,10 @@ const EventoDimeiggs = () => {
       imagen="/images/Dimeiggs.jpg"
       alt="Aldo Olivero Soto - Dimeiggs"
       parrafos={parrafos}
-    >
-
-    </EventoBase>
+      fecha="2023-03-10"
+      lugar="Zona Comercial Dimeiggs, Santiago"
+      personaEvento="Operativo de Seguridad"
+    />
   );
 };
 

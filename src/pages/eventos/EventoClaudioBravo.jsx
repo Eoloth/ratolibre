@@ -1,7 +1,5 @@
-// Contenido JSX simulado para Claudio Bravoimport React from 'react';
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
-
 
 const EventoClaudioBravo = () => {
   const parrafos = [
@@ -12,17 +10,18 @@ const EventoClaudioBravo = () => {
     'El operativo incluyó la supervisión de accesos, control de multitudes y atención a emergencias, asegurando una experiencia segura para todos los presentes.',
     'La coordinación del equipo de seguridad fue fundamental para el éxito del evento, permitiendo que los fanáticos disfrutaran de un momento inolvidable con su ídolo.',
   ];
-  
+
   return (
     <EventoBase
       titulo="Visita de Claudio Bravo"
       imagen="/images/claudio_bravo.jpg"
       alt="Aldo Olivero Soto - Claudio Bravo"
       parrafos={parrafos}
-    >
-
-
-    </EventoBase>
+      fecha="2022-11-15"
+      lugar="Instalaciones deportivas en Santiago"
+      personaEvento="Claudio Bravo"
+    />
   );
 };
+
 export default EventoClaudioBravo;

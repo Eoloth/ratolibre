@@ -1,4 +1,3 @@
-// Contenido JSX simulado para Miley Cyrus// src/pages/eventos/EventoMileyCyrus.jsx
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 
@@ -7,13 +6,11 @@ const EventoMileyCyrus = () => {
     'Miley Cyrus visitó Chile en un esperado concierto en el Estadio Nacional, reuniendo a miles de fanáticos. La coordinación de la seguridad fue crucial para el éxito del evento.',
     <>
       <strong>Aldo Olivero Soto</strong> fue uno de los responsables en terreno para supervisar el acceso seguro del público
-            y resguardar las zonas de backstage durante la presentación.{" "}
-            
+      y resguardar las zonas de backstage durante la presentación.
     </>,
     'El evento fue un éxito rotundo, con una gran asistencia y una atmósfera electrizante. La seguridad fue fundamental para garantizar la tranquilidad de todos los asistentes.',
     'El equipo de seguridad trabajó en conjunto con las autoridades locales para asegurar que todo transcurriera sin inconvenientes.',
   ];
-
 
   return (
     <EventoBase
@@ -21,10 +18,11 @@ const EventoMileyCyrus = () => {
       imagen="/images/miley_cirus.jpg"
       alt="Aldo Olivero Soto - Miley Cyrus en Chile"
       parrafos={parrafos}
-    >
-
-
-    </EventoBase>
+      fecha="2022-03-27"
+      lugar="Estadio Nacional, Santiago"
+      personaEvento="Miley Cyrus"
+    />
   );
 };
+
 export default EventoMileyCyrus;

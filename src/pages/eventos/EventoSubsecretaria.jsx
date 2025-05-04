@@ -1,7 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 
-
 const EventoSubsecretaria = () => {
   const parrafos = [
     'En el marco de una ceremonia oficial organizada por la Subsecretaría del Interior, diversas autoridades se reunieron en Santiago para abordar temas de seguridad ciudadana y cohesión comunitaria.',
@@ -18,23 +17,17 @@ const EventoSubsecretaria = () => {
     'La participación activa de los ciudadanos en la seguridad de sus comunidades es esencial para lograr un cambio positivo y duradero.',
     'La Subsecretaría del Interior continuará trabajando en iniciativas que promuevan la seguridad y la participación ciudadana, buscando siempre el bienestar de las comunidades.',
   ];
+
   return (
     <EventoBase
       titulo="Reunión de la Subsecretaría del Interior"
       imagen="/images/subsecretaria.jpg"
       alt="Aldo Olivero Soto - Evento de la Subsecretaría del Interior"
-      fecha="15 de marzo de 2023"
-      lugar="Santiago, Chile"
-      descripcion="Ceremonia oficial organizada por la Subsecretaría del Interior, donde se abordaron temas de seguridad ciudadana y cohesión comunitaria."
-      subtitulo="Evento de la Subsecretaría del Interior"
-      subtitulo2="Ceremonia oficial"
-      subtitulo3="Santiago, Chile"  
-      
       parrafos={parrafos}
-    >
-
-
-    </EventoBase>
+      fecha="2023-03-15"
+      lugar="Santiago, Chile"
+      personaEvento="Subsecretaría del Interior"
+    />
   );
 };
 

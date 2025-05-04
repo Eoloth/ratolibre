@@ -1,7 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 
-
 const EventoVillaOlimpica = () => {
   const parrafos = [
     'La Villa Olímpica de Ñuñoa fue escenario de un operativo de control comunitario y actividades culturales impulsadas por juntas vecinales en coordinación con las autoridades municipales.',
@@ -20,12 +19,12 @@ const EventoVillaOlimpica = () => {
     <EventoBase
       titulo="Operativo en Villa Olímpica"
       imagen="/images/villa_olimpica.jpg"
-      alt="Villa Olímpica"
+      alt="Aldo Olivero Soto - Villa Olímpica"
       parrafos={parrafos}
-    >
-
-
-    </EventoBase>
+      fecha="2023-01-28"
+      lugar="Villa Olímpica, Ñuñoa, Santiago"
+      personaEvento="Juntas Vecinales y Municipalidad de Ñuñoa"
+    />
   );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 
-
 const EventoFaenasMineras = () => {
   const parrafos = [
     'Las faenas mineras en el norte del país implican estrictos protocolos de seguridad, tanto operativos como logísticos. El acceso a las instalaciones está regulado y se requiere personal altamente calificado.',
@@ -12,17 +11,16 @@ const EventoFaenasMineras = () => {
     'La coordinación del equipo de seguridad fue esencial para el éxito de las operaciones, permitiendo que las actividades se desarrollaran sin contratiempos.',
   ];
 
-
   return (
     <EventoBase
       titulo="Operativo en Faenas Mineras"
       imagen="/images/minera.jpg"
       alt="Aldo Olivero Soto - Faenas Mineras"
       parrafos={parrafos}
-    >
-
-
-    </EventoBase>
+      fecha="2022-09-05"
+      lugar="Faenas mineras del norte de Chile"
+      personaEvento="Faena minera"
+    />
   );
 };
 

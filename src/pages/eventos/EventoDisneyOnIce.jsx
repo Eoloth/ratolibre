@@ -12,15 +12,18 @@ const EventoDisneyOnIce = () => {
     'Disney On Ice es un evento que combina la magia de Disney con el arte del patinaje sobre hielo, creando un espectáculo visual impresionante.',
     'Los personajes favoritos de Disney cobran vida en el hielo, llevando a los espectadores a un viaje lleno de música, danza y emoción.',
   ];
+
   return (
     <EventoBase
       titulo="Disney On Ice en Chile"
       imagen="/images/disney_on_ice.jpg"
       alt="Aldo Olivero Soto - Disney On Ice"
       parrafos={parrafos}
-    >
-
-    </EventoBase>
+      fecha="2023-07-20"
+      lugar="Movistar Arena, Santiago"
+      personaEvento="Disney On Ice"
+    />
   );
 };
+
 export default EventoDisneyOnIce;

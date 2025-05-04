@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';
-import Navbar from '../components/Navbar';
 
 const eventos = [
   { nombre: "Show de Ronaldinho", ruta: "/evento/ronaldinho", imagen: "/images/ronaldinho.jpg" },
@@ -14,19 +13,20 @@ const eventos = [
   { nombre: "Miley Cyrus", ruta: "/evento/miley-cyrus", imagen: "/images/miley_cirus.jpg" },
   { nombre: "Claudio Bravo", ruta: "/evento/claudio-bravo", imagen: "/images/claudio_bravo.jpg" },
   { nombre: "Dimeiggs", ruta: "/evento/dimeiggs", imagen: "/images/Dimeiggs.jpg" },
-  { nombre: "Faenas Mineras", ruta: "/evento/faenas-mineras", imagen: "/images/faenas_mineras.jpg" },
+  { nombre: "Faenas Mineras", ruta: "/evento/faenas-mineras", imagen: "/images/minera.jpg" },
 ];
 
 const AldoOliveroSoto = () => {
-  Navbar();
-  
   return (
     <Layout>
       <Helmet>
-      <title>Aldo Olivero Soto - Seguridad en Eventos</title>
-      <meta name="description" content="Perfil profesional de Aldo Olivero Soto. Conoce su experiencia como experto en seguridad de eventos masivos en Chile." />
-      <link rel="canonical" href="https://ratolibre.cl/personas/aldo-olivero-soto" />
-    </Helmet>
+        <title>Aldo Olivero Soto - Seguridad en Eventos</title>
+        <meta name="description" content="Perfil profesional de Aldo Olivero Soto. Conoce su experiencia como experto en seguridad de eventos masivos en Chile." />
+        <meta property="og:title" content="Aldo Olivero Soto - Seguridad en Eventos" />
+        <meta property="og:description" content="Experto en seguridad de eventos masivos en Chile. Descubre su trayectoria en actividades culturales, deportivas y comunitarias." />
+        <meta property="og:image" content="https://ratolibre.cl/images/aldo_olivero_soto.jpg" />
+        <link rel="canonical" href="https://ratolibre.cl/personas/aldo-olivero-soto" />
+      </Helmet>
 
       <div className="bg-white dark:bg-gray-800 rounded-md p-6 shadow border border-gray-200 dark:border-gray-600">
         <div className="flex flex-col sm:flex-row items-center mb-8 gap-6">
