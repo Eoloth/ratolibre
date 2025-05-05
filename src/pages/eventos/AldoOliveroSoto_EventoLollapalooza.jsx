@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoLollapalooza = () => {
   const parrafos = [
@@ -17,14 +19,18 @@ const EventoLollapalooza = () => {
 
   return (
     <EventoBase
-      titulo="Operativo Lollapalooza 2022"
-      imagen="/images/Lollapalooza 2022.jpg"
-      alt="Aldo Olivero Soto - Lollapalooza"
-      parrafos={parrafos}
-      fecha="2022-03-18"
-      lugar="Parque Bicentenario de Cerrillos, Santiago"
-      personaEvento="Lollapalooza Chile"
-    />
+  titulo="Show de Ronaldinho en Chile"
+  imagen="/images/ronaldinho.jpg"
+  alt="Aldo Olivero Soto - Ronaldinho en Chile"
+  parrafos={parrafos}
+  fecha="2023-06-22"
+  lugar="Estadio Nacional, Santiago"
+  personaEvento="Ronaldinho"
+  descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+>
+  <ReferenciasExternas />
+</EventoBase>
+
   );
 };
 

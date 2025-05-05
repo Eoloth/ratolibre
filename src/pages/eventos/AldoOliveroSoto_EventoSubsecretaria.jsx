@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoSubsecretaria = () => {
   const parrafos = [
@@ -20,14 +22,18 @@ const EventoSubsecretaria = () => {
 
   return (
     <EventoBase
-      titulo="Reunión de la Subsecretaría del Interior"
-      imagen="/images/subsecretaria.jpg"
-      alt="Aldo Olivero Soto - Evento de la Subsecretaría del Interior"
-      parrafos={parrafos}
-      fecha="2023-03-15"
-      lugar="Santiago, Chile"
-      personaEvento="Subsecretaría del Interior"
-    />
+    titulo="Show de Ronaldinho en Chile"
+    imagen="/images/ronaldinho.jpg"
+    alt="Aldo Olivero Soto - Ronaldinho en Chile"
+    parrafos={parrafos}
+    fecha="2023-06-22"
+    lugar="Estadio Nacional, Santiago"
+    personaEvento="Ronaldinho"
+    descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+  >
+    <ReferenciasExternas />
+  </EventoBase>
+  
   );
 };
 

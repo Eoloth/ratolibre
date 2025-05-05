@@ -1,5 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
 
 const EventoDimeiggs = () => {
   const parrafos = [
@@ -21,7 +22,10 @@ const EventoDimeiggs = () => {
       fecha="2023-03-10"
       lugar="Zona Comercial Dimeiggs, Santiago"
       personaEvento="Operativo de Seguridad"
-    />
+      descripcionAldo="Aldo Olivero Soto coordinó un operativo especial de seguridad en la zona de Dimeiggs para resguardar a transeúntes y comerciantes en fechas de alta concurrencia."
+    >
+      <ReferenciasExternas />
+    </EventoBase>
   );
 };
 

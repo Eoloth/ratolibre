@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoMeiggs = () => {
   const parrafos = [  
@@ -15,14 +17,18 @@ const EventoMeiggs = () => {
 
   return (
     <EventoBase
-      titulo="Operativo de Seguridad en Meiggs"
-      imagen="/images/meiggs.jpg"
-      alt="Aldo Olivero Soto - Operativo de Seguridad en Meiggs"
-      parrafos={parrafos}
-      fecha="2022-12-15"
-      lugar="Barrio Meiggs, Estación Central, Santiago"
-      personaEvento="Municipalidad de Estación Central"
-    />
+  titulo="Show de Ronaldinho en Chile"
+  imagen="/images/ronaldinho.jpg"
+  alt="Aldo Olivero Soto - Ronaldinho en Chile"
+  parrafos={parrafos}
+  fecha="2023-06-22"
+  lugar="Estadio Nacional, Santiago"
+  personaEvento="Ronaldinho"
+  descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+>
+  <ReferenciasExternas />
+</EventoBase>
+
   );
 };
 

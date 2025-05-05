@@ -1,19 +1,52 @@
 [
-    {
-      "titulo": "Lollapalooza 2025",
-      "categoria": "musical",
-      "imagen": "/images/lollapalooza.jpg",
-      "fuente": "EMOL",
-      "url": "https://www.emol.com/noticias/Espectaculos/2025/03/10/1111111/lollapalooza-2025.html",
-      "slug": "lollapalooza-2025"
-    },
-    {
-      "titulo": "Maratón de Santiago 2025",
-      "categoria": "deportivo",
-      "imagen": "/images/maraton.jpg",
-      "fuente": "EMOL",
-      "url": "https://www.emol.com/noticias/Deportes/2025/04/02/2222222/maraton-santiago.html",
-      "slug": "maraton-santiago-2025"
-    }
-  ]
-  
+  {
+    "nombre": "Show de Ronaldinho",
+    "ruta": "/aldo-evento/ronaldinho",
+    "imagen": "/images/ronaldinho.jpg"
+  },
+  {
+    "nombre": "Disney On Ice",
+    "ruta": "/aldo-evento/disney-on-ice",
+    "imagen": "/images/disney_on_ice.jpg"
+  },
+  {
+    "nombre": "Lollapalooza",
+    "ruta": "/aldo-evento/lollapalooza",
+    "imagen": "/images/Lollapalooza 2022.jpg"
+  },
+  {
+    "nombre": "Meiggs",
+    "ruta": "/aldo-evento/meiggs",
+    "imagen": "/images/meiggs.jpg"
+  },
+  {
+    "nombre": "Subsecretaría",
+    "ruta": "/aldo-evento/subsecretaria",
+    "imagen": "/images/subsecretaria.jpg"
+  },
+  {
+    "nombre": "Villa Olímpica",
+    "ruta": "/aldo-evento/villa-olimpica",
+    "imagen": "/images/villa_olimpica.jpg"
+  },
+  {
+    "nombre": "Miley Cyrus",
+    "ruta": "/aldo-evento/miley-cyrus",
+    "imagen": "/images/miley_cirus.jpg"
+  },
+  {
+    "nombre": "Claudio Bravo",
+    "ruta": "/aldo-evento/claudio-bravo",
+    "imagen": "/images/claudio_bravo.jpg"
+  },
+  {
+    "nombre": "Dimeiggs",
+    "ruta": "/aldo-evento/dimeiggs",
+    "imagen": "/images/Dimeiggs.jpg"
+  },
+  {
+    "nombre": "Faenas Mineras",
+    "ruta": "/aldo-evento/faenas-mineras",
+    "imagen": "/images/minera.jpg"
+  }
+]

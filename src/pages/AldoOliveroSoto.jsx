@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';
+import ReferenciasExternas from '../components/ReferenciasExternas';
 
 const eventos = [
   { nombre: "Show de Ronaldinho", ruta: "/evento/ronaldinho", imagen: "/images/ronaldinho.jpg" },
@@ -21,9 +22,15 @@ const AldoOliveroSoto = () => {
     <Layout>
       <Helmet>
         <title>Aldo Olivero Soto - Seguridad en Eventos</title>
-        <meta name="description" content="Perfil profesional de Aldo Olivero Soto. Conoce su experiencia como experto en seguridad de eventos masivos en Chile." />
+        <meta
+          name="description"
+          content="Perfil profesional de Aldo Olivero Soto. Conoce su experiencia como experto en seguridad de eventos masivos en Chile."
+        />
         <meta property="og:title" content="Aldo Olivero Soto - Seguridad en Eventos" />
-        <meta property="og:description" content="Experto en seguridad de eventos masivos en Chile. Descubre su trayectoria en actividades culturales, deportivas y comunitarias." />
+        <meta
+          property="og:description"
+          content="Experto en seguridad de eventos masivos en Chile. Descubre su trayectoria en actividades culturales, deportivas y comunitarias."
+        />
         <meta property="og:image" content="https://ratolibre.cl/images/aldo_olivero_soto.jpg" />
         <link rel="canonical" href="https://ratolibre.cl/personas/aldo-olivero-soto" />
       </Helmet>
@@ -37,7 +44,9 @@ const AldoOliveroSoto = () => {
           />
           <div>
             <h1 className="text-3xl font-bold text-blue-800 dark:text-blue-300">Aldo Olivero Soto</h1>
-            <p className="text-gray-600 dark:text-gray-300">Experto en seguridad de eventos comunitarios y culturales</p>
+            <p className="text-gray-600 dark:text-gray-300">
+              Experto en seguridad de eventos comunitarios y culturales
+            </p>
             <p className="mt-2 text-gray-700 dark:text-gray-200">
               Aldo ha participado en la seguridad de múltiples actividades masivas en Santiago, contribuyendo con su experiencia para mantener entornos seguros y bien gestionados.
             </p>
@@ -63,6 +72,10 @@ const AldoOliveroSoto = () => {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-8">
+          <ReferenciasExternas />
         </div>
       </div>
     </Layout>

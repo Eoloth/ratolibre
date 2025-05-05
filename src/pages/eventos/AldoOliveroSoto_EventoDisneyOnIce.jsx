@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoDisneyOnIce = () => {
   const parrafos = [
@@ -14,16 +16,18 @@ const EventoDisneyOnIce = () => {
   ];
 
   return (
-    <EventoBase
-      titulo="Disney On Ice en Chile"
-      imagen="/images/disney_on_ice.jpg"
-      alt="Aldo Olivero Soto - Disney On Ice"
-      parrafos={parrafos}
-      fecha="2023-07-20"
-      lugar="Movistar Arena, Santiago"
-      personaEvento="Disney On Ice"
-    />
-  );
+      <EventoBase
+        titulo="Disney On Ice en Chile"
+        imagen="/images/disney_on_ice.jpg"
+        alt="Aldo Olivero Soto - Disney On Ice"
+        parrafos={parrafos}
+        fecha="2023-07-20"
+        lugar="Movistar Arena, Santiago"
+        personaEvento="Disney On Ice"
+      >
+        <ReferenciasExternas />
+      </EventoBase>
+    );
 };
 
 export default EventoDisneyOnIce;

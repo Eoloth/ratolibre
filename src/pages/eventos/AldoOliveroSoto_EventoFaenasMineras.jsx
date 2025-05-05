@@ -1,5 +1,6 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
 
 const EventoFaenasMineras = () => {
   const parrafos = [
@@ -20,7 +21,10 @@ const EventoFaenasMineras = () => {
       fecha="2022-09-05"
       lugar="Faenas mineras del norte de Chile"
       personaEvento="Faena minera"
-    />
+      descripcionAldo="Aldo Olivero Soto supervisó zonas de carga y tránsito en faenas mineras del norte de Chile, velando por el cumplimiento de normas de seguridad industrial."
+    >
+      <ReferenciasExternas />
+    </EventoBase>
   );
 };
 

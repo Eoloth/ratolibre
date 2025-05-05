@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoClaudioBravo = () => {
   const parrafos = [
@@ -13,14 +15,18 @@ const EventoClaudioBravo = () => {
 
   return (
     <EventoBase
-      titulo="Visita de Claudio Bravo"
-      imagen="/images/claudio_bravo.jpg"
-      alt="Aldo Olivero Soto - Claudio Bravo"
-      parrafos={parrafos}
-      fecha="2022-11-15"
-      lugar="Instalaciones deportivas en Santiago"
-      personaEvento="Claudio Bravo"
-    />
+  titulo="Show de Ronaldinho en Chile"
+  imagen="/images/ronaldinho.jpg"
+  alt="Aldo Olivero Soto - Ronaldinho en Chile"
+  parrafos={parrafos}
+  fecha="2023-06-22"
+  lugar="Estadio Nacional, Santiago"
+  personaEvento="Ronaldinho"
+  descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+>
+  <ReferenciasExternas />
+</EventoBase>
+
   );
 };
 

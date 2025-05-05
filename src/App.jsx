@@ -7,17 +7,17 @@ import IndexPage from './pages/IndexPage.jsx';
 // Colaboradores
 import AldoOliveroSoto from './pages/AldoOliveroSoto.jsx';
 
-// Eventos
-import EventoRonaldinho from './pages/eventos/EventoRonaldinho.jsx';
-import EventoClaudioBravo from './pages/eventos/EventoClaudioBravo.jsx';
-import EventoDimeiggs from './pages/eventos/EventoDimeiggs.jsx';
-import EventoDisneyOnIce from './pages/eventos/EventoDisneyOnIce.jsx';
-import EventoFaenasMineras from './pages/eventos/EventoFaenasMineras.jsx';
-import EventoLollapalooza from './pages/eventos/EventoLollapalooza.jsx';
-import EventoMeiggs from './pages/eventos/EventoMeiggs.jsx';
-import EventoMileyCyrus from './pages/eventos/EventoMileyCyrus.jsx';
-import EventoSubsecretaria from './pages/eventos/EventoSubsecretaria.jsx';
-import EventoVillaOlimpica from './pages/eventos/EventoVillaOlimpica.jsx';
+// Eventos (con nombres actualizados)
+import EventoRonaldinho from './pages/eventos/AldoOliveroSoto_EventoRonaldinho.jsx';
+import EventoClaudioBravo from './pages/eventos/AldoOliveroSoto_EventoClaudioBravo.jsx';
+import EventoDimeiggs from './pages/eventos/AldoOliveroSoto_EventoDimeiggs.jsx';
+import EventoDisneyOnIce from './pages/eventos/AldoOliveroSoto_EventoDisneyOnIce.jsx';
+import EventoFaenasMineras from './pages/eventos/AldoOliveroSoto_EventoFaenasMineras.jsx';
+import EventoLollapalooza from './pages/eventos/AldoOliveroSoto_EventoLollapalooza.jsx';
+import EventoMeiggs from './pages/eventos/AldoOliveroSoto_EventoMeiggs.jsx';
+import EventoMileyCyrus from './pages/eventos/AldoOliveroSoto_EventoMileyCyrus.jsx';
+import EventoSubsecretaria from './pages/eventos/AldoOliveroSoto_EventoSubsecretaria.jsx';
+import EventoVillaOlimpica from './pages/eventos/AldoOliveroSoto_EventoVillaOlimpica.jsx';
 
 // Página 404
 import NotFound from './pages/NotFound.jsx';
@@ -26,10 +26,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Página de inicio con noticias y panoramas */}
+        {/* Página de inicio */}
         <Route path="/" element={<IndexPage />} />
 
-        {/* Colaboradores */}
+        {/* Perfil de colaborador */}
         <Route path="/personas/aldo-olivero-soto" element={<AldoOliveroSoto />} />
 
         {/* Eventos */}
@@ -44,7 +44,7 @@ function App() {
         <Route path="/evento/subsecretaria" element={<EventoSubsecretaria />} />
         <Route path="/evento/villa-olimpica" element={<EventoVillaOlimpica />} />
 
-        {/* Página de error para rutas no encontradas */}
+        {/* Página 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

@@ -1,5 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
+import ReferenciasExternas from '../../components/ReferenciasExternas';
+
 
 const EventoMileyCyrus = () => {
   const parrafos = [
@@ -14,14 +16,18 @@ const EventoMileyCyrus = () => {
 
   return (
     <EventoBase
-      titulo="Concierto de Miley Cyrus en Chile"
-      imagen="/images/miley_cirus.jpg"
-      alt="Aldo Olivero Soto - Miley Cyrus en Chile"
-      parrafos={parrafos}
-      fecha="2022-03-27"
-      lugar="Estadio Nacional, Santiago"
-      personaEvento="Miley Cyrus"
-    />
+    titulo="Show de Ronaldinho en Chile"
+    imagen="/images/ronaldinho.jpg"
+    alt="Aldo Olivero Soto - Ronaldinho en Chile"
+    parrafos={parrafos}
+    fecha="2023-06-22"
+    lugar="Estadio Nacional, Santiago"
+    personaEvento="Ronaldinho"
+    descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+  >
+    <ReferenciasExternas />
+  </EventoBase>
+  
   );
 };
 

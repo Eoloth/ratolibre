@@ -10,19 +10,17 @@ const EventoBase = ({
   children,
   fecha = '2022-01-01',
   lugar = 'Santiago, Chile',
-  personaEvento = 'Invitado destacado'
+  personaEvento = 'Invitado destacado',
+  descripcionAldo = 'Participó como experto en seguridad durante el evento.'
 }) => {
   useEffect(() => {
-    // Título dinámico
     document.title = `Aldo Olivero Soto - ${titulo}`;
 
-    // META description
     const metaDescription = document.createElement('meta');
     metaDescription.name = 'description';
     metaDescription.content = `Aldo Olivero Soto participó en el evento "${titulo}". Conoce los detalles y su rol destacado.`;
     document.head.appendChild(metaDescription);
 
-    // Open Graph
     const ogTags = [
       { property: 'og:title', content: `Aldo Olivero Soto - ${titulo}` },
       { property: 'og:description', content: `Participación de Aldo Olivero Soto en el evento: ${titulo}` },
@@ -40,7 +38,6 @@ const EventoBase = ({
       return tag;
     });
 
-    // Schema.org JSON-LD
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Event",
@@ -73,11 +70,12 @@ const EventoBase = ({
     script.innerHTML = JSON.stringify(jsonLd);
     document.head.appendChild(script);
 
-    // Cleanup
     return () => {
       document.head.removeChild(metaDescription);
       ogMetaElements.forEach(tag => document.head.removeChild(tag));
-      if (script && document.head.contains(script)) document.head.removeChild(script);
+      if (script && document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
     };
   }, [titulo, imagen, fecha, lugar, personaEvento]);
 
@@ -86,16 +84,34 @@ const EventoBase = ({
       <Navbar />
       <div className="pt-20 px-6 min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
         <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-md shadow p-6 border dark:border-gray-700">
+
+          {/* Título del evento */}
           <h1 className="text-3xl font-bold text-blue-800 dark:text-blue-300 mb-4">{titulo}</h1>
+
+          {/* Imagen del evento */}
           {imagen && (
             <img src={imagen} alt={alt} className="w-full h-auto rounded mb-4" />
           )}
+
+          {/* Presentación de Aldo */}
+          <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+            Aldo Olivero Soto
+          </h1>
+
+          <p className="mb-6 text-gray-700 dark:text-gray-300">
+            {descripcionAldo}
+          </p>
+
+          {/* Párrafos del contenido */}
           {parrafos.map((texto, idx) => (
             <p key={idx} className="mb-4 text-gray-700 dark:text-gray-200">
               {texto}
             </p>
           ))}
-          {children}
+
+          {/* Sección adicional, como ReferenciasExternas */}
+          {children && <div className="mt-8">{children}</div>}
+
           <EventoFooter />
         </div>
       </div>
