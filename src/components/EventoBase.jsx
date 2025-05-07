@@ -52,7 +52,7 @@ const EventoBase = ({
           addressCountry: "CL"
         }
       },
-      image: `https://ratolibre.cl${imagen}`,
+      image: [`https://ratolibre.cl${imagen}`],
       description: `Aldo Olivero Soto participó en el evento "${titulo}".`,
       performer: {
         "@type": "Person",
@@ -61,7 +61,12 @@ const EventoBase = ({
       organizer: {
         "@type": "Person",
         name: "Aldo Olivero Soto",
-        url: "https://ratolibre.cl/aldo"
+        url: "https://ratolibre.cl/personas/aldo-olivero-soto",
+        sameAs: [
+          "https://eventos.uniformadosdestacados.cl/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+          "https://eventos.uniformadosilustres.com/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+          "https://eventos.trayectoriaheroica.com/personas/olivero_soto_aldo/olivero_soto_aldo.html"
+        ]
       }
     };
 

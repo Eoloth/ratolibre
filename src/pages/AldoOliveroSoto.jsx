@@ -17,10 +17,36 @@ const eventos = [
   { nombre: "Faenas Mineras", ruta: "/evento/faenas-mineras", imagen: "/images/minera.jpg" },
 ];
 
+
 const AldoOliveroSoto = () => {
   return (
     <Layout>
       <Helmet>
+      <meta name="keywords" content="Aldo Olivero Soto, seguridad en eventos, eventos en Santiago, seguridad privada, ratolibre.cl, trayectoria profesional" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Aldo Olivero Soto",
+          jobTitle: "Especialista en Seguridad de Eventos",
+          image: "https://ratolibre.cl/images/aldo_olivero_soto.jpg",
+          url: "https://ratolibre.cl/personas/aldo-olivero-soto",
+          sameAs: [
+            "https://eventos.uniformadosdestacados.cl/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+            "https://eventos.uniformadosilustres.com/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+            "https://eventos.trayectoriaheroica.com/personas/olivero_soto_aldo/olivero_soto_aldo.html"
+          ],
+          description: "Aldo Olivero Soto ha contribuido activamente en la seguridad de eventos culturales, deportivos y comunitarios en Chile.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Santiago",
+            addressCountry: "CL"
+          }
+        })}
+      </script>
+
+
         <title>Aldo Olivero Soto - Seguridad en Eventos</title>
         <meta
           name="description"

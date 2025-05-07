@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoMileyCyrus = () => {
@@ -15,6 +16,15 @@ const EventoMileyCyrus = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Concierto de Miley Cyrus - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto supervisó el acceso del público y zonas de backstage durante el concierto de Miley Cyrus." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/miley-cyrus" />
+    <meta property="og:title" content="Concierto de Miley Cyrus - Aldo Olivero Soto" />
+    <meta property="og:description" content="Aldo Olivero Soto participó como responsable de seguridad en evento musical masivo en Santiago." />
+    <meta property="og:image" content="https://ratolibre.cl/images/miley_cirus.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/miley-cyrus" />
+  </Helmet>
     <EventoBase
     titulo="Show de Ronaldinho en Chile"
     imagen="/images/ronaldinho.jpg"
@@ -27,7 +37,7 @@ const EventoMileyCyrus = () => {
   >
     <ReferenciasExternas />
   </EventoBase>
-  
+  </>
   );
 };
 

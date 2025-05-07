@@ -1,7 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
-
+import { Helmet } from 'react-helmet';
 
 const EventoRonaldinho = () => {
   const parrafos = [
@@ -21,19 +21,64 @@ const EventoRonaldinho = () => {
   ];
 
   return (
-    <EventoBase
-  titulo="Show de Ronaldinho en Chile"
-  imagen="/images/ronaldinho.jpg"
-  alt="Aldo Olivero Soto - Ronaldinho en Chile"
-  parrafos={parrafos}
-  fecha="2023-06-22"
-  lugar="Estadio Nacional, Santiago"
-  personaEvento="Ronaldinho"
-  descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
->
-  <ReferenciasExternas />
-</EventoBase>
+    <>
+      <Helmet>
+        <title>Show de Ronaldinho en Chile - Aldo Olivero Soto</title>
+        <meta name="description" content="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores." />
+        <link rel="canonical" href="https://ratolibre.cl/evento/ronaldinho" />
+        <meta property="og:title" content="Show de Ronaldinho en Chile - Aldo Olivero Soto" />
+        <meta property="og:description" content="Participación destacada de Aldo Olivero Soto como personal de seguridad en el evento Duelo de Leyendas." />
+        <meta property="og:image" content="https://ratolibre.cl/images/ronaldinho.jpg" />
+        <meta property="og:url" content="https://ratolibre.cl/evento/ronaldinho" />
 
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: "Show de Ronaldinho en Chile",
+            startDate: "2023-06-22",
+            location: {
+              "@type": "Place",
+              name: "Estadio Nacional",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Santiago",
+                addressCountry: "CL"
+              }
+            },
+            image: ["https://ratolibre.cl/images/ronaldinho.jpg"],
+            description: "Evento 'Duelo de Leyendas' en el que Ronaldinho participó en Chile. Aldo Olivero Soto fue parte del equipo de seguridad.",
+            performer: {
+              "@type": "Person",
+              name: "Ronaldinho"
+            },
+            organizer: {
+              "@type": "Person",
+              name: "Aldo Olivero Soto",
+              url: "https://ratolibre.cl/personas/aldo-olivero-soto",
+              sameAs: [
+                "https://eventos.uniformadosdestacados.cl/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+                "https://eventos.uniformadosilustres.com/personas/olivero_soto_aldo/olivero_soto_aldo.html",
+                "https://eventos.trayectoriaheroica.com/personas/olivero_soto_aldo/olivero_soto_aldo.html"
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
+
+      <EventoBase
+        titulo="Show de Ronaldinho en Chile"
+        imagen="/images/ronaldinho.jpg"
+        alt="Aldo Olivero Soto - Ronaldinho en Chile"
+        parrafos={parrafos}
+        fecha="2023-06-22"
+        lugar="Estadio Nacional, Santiago"
+        personaEvento="Ronaldinho"
+        descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+      >
+        <ReferenciasExternas />
+      </EventoBase>
+    </>
   );
 };
 

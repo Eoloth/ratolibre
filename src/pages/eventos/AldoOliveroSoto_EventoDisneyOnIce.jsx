@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoDisneyOnIce = () => {
@@ -16,6 +17,16 @@ const EventoDisneyOnIce = () => {
   ];
 
   return (
+    <>
+    <Helmet>
+  <title>Disney On Ice en Chile - Aldo Olivero Soto</title>
+  <meta name="description" content="Aldo Olivero Soto resguardó accesos y zonas de evacuación en Disney On Ice, realizado en el Movistar Arena." />
+  <link rel="canonical" href="https://ratolibre.cl/evento/disney-on-ice" />
+  <meta property="og:title" content="Disney On Ice en Chile - Aldo Olivero Soto" />
+  <meta property="og:description" content="Participación destacada de Aldo Olivero Soto como parte del equipo de seguridad en el Movistar Arena." />
+  <meta property="og:image" content="https://ratolibre.cl/images/disney_on_ice.jpg" />
+  <meta property="og:url" content="https://ratolibre.cl/evento/disney-on-ice" />
+</Helmet>
       <EventoBase
         titulo="Disney On Ice en Chile"
         imagen="/images/disney_on_ice.jpg"
@@ -27,6 +38,7 @@ const EventoDisneyOnIce = () => {
       >
         <ReferenciasExternas />
       </EventoBase>
+      </>
     );
 };
 

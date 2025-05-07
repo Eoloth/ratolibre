@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoMeiggs = () => {
@@ -16,6 +17,15 @@ const EventoMeiggs = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Operativo de Seguridad en Meiggs - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto colaboró en patrullajes y control de accesos durante operativos navideños en Meiggs." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/meiggs" />
+    <meta property="og:title" content="Operativo de Seguridad en Meiggs - Aldo Olivero Soto" />
+    <meta property="og:description" content="Aldo Olivero Soto formó parte del dispositivo de seguridad en fechas de alta afluencia." />
+    <meta property="og:image" content="https://ratolibre.cl/images/meiggs.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/meiggs" />
+  </Helmet>
     <EventoBase
   titulo="Show de Ronaldinho en Chile"
   imagen="/images/ronaldinho.jpg"
@@ -28,7 +38,7 @@ const EventoMeiggs = () => {
 >
   <ReferenciasExternas />
 </EventoBase>
-
+</>
   );
 };
 

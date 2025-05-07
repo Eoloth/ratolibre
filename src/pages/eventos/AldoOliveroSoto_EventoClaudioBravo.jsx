@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoClaudioBravo = () => {
@@ -14,6 +15,15 @@ const EventoClaudioBravo = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Visita de Claudio Bravo - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto coordinó el dispositivo de ingreso de Claudio Bravo en actividad deportiva en Santiago." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/claudio-bravo" />
+    <meta property="og:title" content="Visita de Claudio Bravo - Aldo Olivero Soto" />
+    <meta property="og:description" content="Participación de Aldo Olivero Soto en seguridad de evento con presencia del arquero nacional." />
+    <meta property="og:image" content="https://ratolibre.cl/images/claudio_bravo.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/claudio-bravo" />
+  </Helmet>
     <EventoBase
   titulo="Show de Ronaldinho en Chile"
   imagen="/images/ronaldinho.jpg"
@@ -26,7 +36,7 @@ const EventoClaudioBravo = () => {
 >
   <ReferenciasExternas />
 </EventoBase>
-
+</>
   );
 };
 

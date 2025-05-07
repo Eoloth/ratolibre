@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoVillaOlimpica = () => {
@@ -18,6 +19,15 @@ const EventoVillaOlimpica = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Operativo Villa Olímpica - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto aseguró la seguridad de los asistentes durante actividades comunitarias en Ñuñoa." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/villa-olimpica" />
+    <meta property="og:title" content="Operativo Villa Olímpica - Aldo Olivero Soto" />
+    <meta property="og:description" content="Participación de Aldo Olivero Soto en operativo vecinal y cultural en la comuna de Ñuñoa." />
+    <meta property="og:image" content="https://ratolibre.cl/images/villa_olimpica.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/villa-olimpica" />
+  </Helmet>
     <EventoBase
   titulo="Show de Ronaldinho en Chile"
   imagen="/images/ronaldinho.jpg"
@@ -30,7 +40,7 @@ const EventoVillaOlimpica = () => {
 >
   <ReferenciasExternas />
 </EventoBase>
-
+</>
   );
 };
 

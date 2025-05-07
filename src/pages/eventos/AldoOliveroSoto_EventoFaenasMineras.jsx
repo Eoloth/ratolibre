@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 const EventoFaenasMineras = () => {
   const parrafos = [
@@ -13,6 +14,15 @@ const EventoFaenasMineras = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Faenas Mineras en el Norte - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto supervisó zonas de carga y tránsito en faenas mineras, cumpliendo normativas de seguridad." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/faenas-mineras" />
+    <meta property="og:title" content="Faenas Mineras en el Norte - Aldo Olivero Soto" />
+    <meta property="og:description" content="Trabajo de Aldo Olivero Soto en seguridad industrial en el norte de Chile." />
+    <meta property="og:image" content="https://ratolibre.cl/images/minera.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/faenas-mineras" />
+  </Helmet>
     <EventoBase
       titulo="Operativo en Faenas Mineras"
       imagen="/images/minera.jpg"
@@ -25,6 +35,7 @@ const EventoFaenasMineras = () => {
     >
       <ReferenciasExternas />
     </EventoBase>
+    </>
   );
 };
 

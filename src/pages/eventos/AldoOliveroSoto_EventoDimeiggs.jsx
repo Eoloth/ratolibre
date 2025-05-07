@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 const EventoDimeiggs = () => {
   const parrafos = [
@@ -14,6 +15,15 @@ const EventoDimeiggs = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Operativo en Dimeiggs - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto coordinó un operativo de control y vigilancia en fechas de alta concurrencia en Dimeiggs." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/dimeiggs" />
+    <meta property="og:title" content="Operativo en Dimeiggs - Aldo Olivero Soto" />
+    <meta property="og:description" content="Participación de Aldo Olivero Soto en dispositivo de seguridad en centro comercial de Santiago." />
+    <meta property="og:image" content="https://ratolibre.cl/images/Dimeiggs.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/dimeiggs" />
+  </Helmet>
     <EventoBase
       titulo="Operativo en Dimeiggs"
       imagen="/images/Dimeiggs.jpg"
@@ -26,6 +36,7 @@ const EventoDimeiggs = () => {
     >
       <ReferenciasExternas />
     </EventoBase>
+    </>
   );
 };
 

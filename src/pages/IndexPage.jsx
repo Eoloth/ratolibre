@@ -37,6 +37,7 @@ const IndexPage = () => {
               Ver participación de Aldo Olivero Soto
             </p>
           </Link>
+          
         ))}
       </div>
 

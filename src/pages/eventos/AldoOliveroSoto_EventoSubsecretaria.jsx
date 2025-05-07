@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoSubsecretaria = () => {
@@ -21,6 +22,16 @@ const EventoSubsecretaria = () => {
   ];
 
   return (
+    <>
+    <Helmet>
+  <title>Evento Subsecretaría del Interior - Aldo Olivero Soto</title>
+  <meta name="description" content="Aldo Olivero Soto supervisó el perímetro de seguridad y reguló accesos vehiculares en evento institucional." />
+  <link rel="canonical" href="https://ratolibre.cl/evento/subsecretaria" />
+  <meta property="og:title" content="Evento Subsecretaría del Interior - Aldo Olivero Soto" />
+  <meta property="og:description" content="Aldo Olivero Soto participó en la coordinación de seguridad en evento con autoridades locales y nacionales." />
+  <meta property="og:image" content="https://ratolibre.cl/images/subsecretaria.jpg" />
+  <meta property="og:url" content="https://ratolibre.cl/evento/subsecretaria" />
+</Helmet>
     <EventoBase
     titulo="Show de Ronaldinho en Chile"
     imagen="/images/ronaldinho.jpg"
@@ -33,7 +44,7 @@ const EventoSubsecretaria = () => {
   >
     <ReferenciasExternas />
   </EventoBase>
-  
+  </>
   );
 };
 

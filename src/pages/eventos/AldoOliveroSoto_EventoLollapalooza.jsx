@@ -1,6 +1,7 @@
 import React from 'react';
 import EventoBase from '../../components/EventoBase';
 import ReferenciasExternas from '../../components/ReferenciasExternas';
+import { Helmet } from 'react-helmet';
 
 
 const EventoLollapalooza = () => {
@@ -18,6 +19,15 @@ const EventoLollapalooza = () => {
   ];
 
   return (
+    <><Helmet>
+    <title>Operativo Lollapalooza 2022 - Aldo Olivero Soto</title>
+    <meta name="description" content="Aldo Olivero Soto coordinó accesos controlados durante el festival Lollapalooza 2022 en Cerrillos." />
+    <link rel="canonical" href="https://ratolibre.cl/evento/lollapalooza" />
+    <meta property="og:title" content="Operativo Lollapalooza 2022 - Aldo Olivero Soto" />
+    <meta property="og:description" content="Participación de Aldo Olivero Soto en la seguridad del evento Lollapalooza en Santiago." />
+    <meta property="og:image" content="https://ratolibre.cl/images/Lollapalooza%202022.jpg" />
+    <meta property="og:url" content="https://ratolibre.cl/evento/lollapalooza" />
+  </Helmet>
     <EventoBase
   titulo="Show de Ronaldinho en Chile"
   imagen="/images/ronaldinho.jpg"
@@ -30,7 +40,7 @@ const EventoLollapalooza = () => {
 >
   <ReferenciasExternas />
 </EventoBase>
-
+</>
   );
 };
 
