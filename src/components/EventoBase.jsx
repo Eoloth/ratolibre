@@ -43,6 +43,9 @@ const EventoBase = ({
       "@type": "Event",
       name: titulo,
       startDate: fecha,
+      endDate: fecha,
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      eventStatus: "https://schema.org/EventScheduled",
       location: {
         "@type": "Place",
         name: lugar,
@@ -67,6 +70,14 @@ const EventoBase = ({
           "https://eventos.uniformadosilustres.com/personas/olivero_soto_aldo/olivero_soto_aldo.html",
           "https://eventos.trayectoriaheroica.com/personas/olivero_soto_aldo/olivero_soto_aldo.html"
         ]
+      },
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "CLP",
+        availability: "https://schema.org/InStock",
+        validFrom: fecha,
+        url: window.location.href
       }
     };
 

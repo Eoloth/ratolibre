@@ -28,18 +28,19 @@ const EventoLollapalooza = () => {
     <meta property="og:image" content="https://ratolibre.cl/images/Lollapalooza%202022.jpg" />
     <meta property="og:url" content="https://ratolibre.cl/evento/lollapalooza" />
   </Helmet>
-    <EventoBase
-  titulo="Show de Ronaldinho en Chile"
-  imagen="/images/ronaldinho.jpg"
-  alt="Aldo Olivero Soto - Ronaldinho en Chile"
+   <EventoBase
+  titulo="Lollapalooza 2022"
+  imagen="/images/Lollapalooza%202022.jpg"
+  alt="Aldo Olivero Soto - Lollapalooza 2022"
   parrafos={parrafos}
-  fecha="2023-06-22"
-  lugar="Estadio Nacional, Santiago"
-  personaEvento="Ronaldinho"
-  descripcionAldo="Aldo Olivero Soto brindó apoyo estratégico en camarines durante el Duelo de Leyendas, garantizando el control de accesos y seguridad de los jugadores."
+  fecha="2022-03-18"
+  lugar="Parque Bicentenario, Cerrillos"
+  personaEvento="Foo Fighters, Doja Cat, Martin Garrix"
+  descripcionAldo="Aldo Olivero Soto fue parte del equipo de seguridad de Lollapalooza 2022, coordinando accesos y supervisando el flujo de asistentes durante los tres días del festival."
 >
   <ReferenciasExternas />
 </EventoBase>
+
 </>
   );
 };
