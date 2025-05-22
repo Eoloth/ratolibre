@@ -14,6 +14,11 @@ const ReferenciasExternas = () => {
       nombre: "Trayectoria Heroica",
       url: "https://eventos.trayectoriaheroica.com/personas/olivero_soto_aldo/olivero_soto_aldo.html",
     },
+    {
+      nombre: "Perfil en Medium",
+      url: "https://medium.com/@MrEquiz01",
+    }
+
   ];
 
   return (
