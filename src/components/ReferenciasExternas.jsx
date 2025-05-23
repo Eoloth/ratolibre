@@ -17,8 +17,15 @@ const ReferenciasExternas = () => {
     {
       nombre: "Perfil en Medium",
       url: "https://medium.com/@MrEquiz01",
-    }
-
+    },
+    {
+      nombre: "Evento Escolar Camuflado",
+      url: "https://eventos.xn--escuela-niojesus-gub.cl/index.html",
+    },
+    {
+      nombre: "PErfil en Pinterest",
+      url: "https://cl.pinterest.com/pin/764134261812982389/",
+    },
   ];
 
   return (
