@@ -34,9 +34,13 @@ Editar
 src/
 │
 ├── components/        # Tarjetas, navbar, referencias
+
 ├── pages/             # Página principal, eventos individuales, perfiles
+
 ├── data/              # JSON con eventos
+
 ├── App.jsx
+
 └── main.jsx
 
 👤 Autor
