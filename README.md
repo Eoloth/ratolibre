@@ -28,11 +28,11 @@ Carga dinámica de datos desde archivos JSON
 Referencias cruzadas con otros sitios para mejorar visibilidad SEO
 
 📂 Estructura del proyecto
-bash
-Copiar
-Editar
+
 src/
+
 │
+
 ├── components/        # Tarjetas, navbar, referencias
 
 ├── pages/             # Página principal, eventos individuales, perfiles
